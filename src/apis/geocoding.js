@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const key = process.env.GEOCODING_API_KEY;
+// WEATHER_API_KEY="769f8e0e121f42acb91171211222901"
+// GEOCODING_API_KEY=pk.eyJ1IjoicmlzaHVzYWh1MjMiLCJhIjoiY2thMmp1dXpuMGI4eDNkb2dudTEyZW00YyJ9.Nmv2NTFYcmHbqhaci4PpPQ
+
+const key =
+  "pk.eyJ1IjoicmlzaHVzYWh1MjMiLCJhIjoiY2thMmp1dXpuMGI4eDNkb2dudTEyZW00YyJ9.Nmv2NTFYcmHbqhaci4PpPQ";
 
 const getLatAndLong = async (location) => {
   try {

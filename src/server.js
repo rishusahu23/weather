@@ -6,7 +6,7 @@ import express from "express";
 import { getLatAndLong } from "./apis/geocoding.js";
 import { getWeather } from "./apis/weather.js";
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const viewsPath = path.join(__dirname, "../public/templates/views");

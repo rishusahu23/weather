@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const key = process.env.WEATHER_API_KEY;
+const key = "769f8e0e121f42acb91171211222901";
 
 const getWeather = async (lat, long) => {
   try {

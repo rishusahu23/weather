@@ -6,7 +6,7 @@ const onSubmit = (event) => {
   event.preventDefault();
   const value = input.value;
   console.log(value);
-  fetch(`http://localhost:5000/weather?address=${value}`)
+  fetch(`/weather?address=${value}`)
     .then((response) => response.json())
     .then((data) => {
       if (data.error) {
